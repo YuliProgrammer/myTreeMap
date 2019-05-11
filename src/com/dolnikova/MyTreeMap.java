@@ -188,7 +188,6 @@ public class MyTreeMap<K extends Comparable<K>, V> implements TreeMap<K, V>, Com
             }
         }
 
-        // key < current.key
         if (current.key.compareTo(key) >= 0) {
             current.left = deleteRecursive(current.left, key);
             return current;
